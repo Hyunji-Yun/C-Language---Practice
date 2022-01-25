@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+   int awardPoints;
+   int userTickets;
+
+   scanf("%d", &userTickets); // Program will be tested with values: 6, 7, 8, 9.
+
+   if(userTickets != 7){
+      awardPoints = 10;}
+   else{
+      awardPoints = userTickets;}
+
+   printf("%d\n", awardPoints);
+
+   return 0;
+}
