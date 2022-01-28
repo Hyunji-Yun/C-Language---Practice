@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+//Write an if-else statement that prints "Goodbye" if userString is "Quit", else prints "Hello". End with newline. 
+
+int main(void) {
+   char userString[50];
+
+   scanf("%s", userString);
+
+   if(strcmp(userString, "Quit")==0){
+      printf("Goodbye\n");
+   }
+   else{
+      printf("Hello\n");
+   }
+
+   return 0;
+}
