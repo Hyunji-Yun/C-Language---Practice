@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+double PyramidVolume(double x, double y, double z){
+   
+   double baseArea = x * y;
+   double volume = baseArea * z * 1/3;
+   return volume;
+}
+
+int main(void) {
+   double userLength;
+   double userWidth;
+   double userHeight;
+
+   scanf("%lf", &userLength);
+   scanf("%lf", &userWidth);
+   scanf("%lf", &userHeight);
+
+   printf("Volume: %f\n", PyramidVolume(userLength, userWidth, userHeight) );
+
+   return 0;
+}
